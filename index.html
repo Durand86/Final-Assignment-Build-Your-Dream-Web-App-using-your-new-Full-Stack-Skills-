@@ -1,0 +1,86 @@
+<!--MS587 Final Project, The project concept is to create a webpage using HTML, CSS, and JavaScript. 
+The webpage will host an information site for a Trading Card Game(TCG) called Magic: The Gathering (MTG). 
+The purpose is to increase my footprint and name recognition in the industry to act as a marketing vector for me to sell MTG cards as a side business.-->
+<!--Creating the doc type that will tell the browser what type of page and version of html this is-->
+<!DOCTYPE html>
+<!--Create our HTML tag will contain all of our HTML code-->
+<html lang="en">
+    <!--Head Section-->
+<head>
+    <meta charset="UTF-8"> <!--Set the char encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport to make the website responsive -->
+    <title>The Gathering Intel</title><!--Creating a Tile for the web page-->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file -->
+</head>
+<body>
+    <header> <!--Header Section-->
+        <div class="header-content">
+            <h1>The Gathering Intel</h1>
+            <h2>The Number One Source Of All Things Magic The Gathering</h2>
+            <!-- Navigation bar containing links to different sections of the webpage -->
+            <nav>
+                <ul>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#guides">Guides</a></li>
+                    <li><a href="#events">Event Calendar</a></li>
+                    <li><a href="#media">Media Links</a></li>
+                    <li><a href="#top-cards">Top Ten Cards</a></li>
+                </ul>
+            </nav>
+            <!-- Label for the dark mode toggle switch -->
+            <label class="switch" for="dark-mode-toggle">
+                <span class="visually-hidden">Toggle Dark Mode</span> <!-- Accessible text for screen readers -->
+                <input type="checkbox" id="dark-mode-toggle"><!-- Checkbox for toggling dark mode -->
+
+                <span class="slider round"></span> <!-- Slider for the toggle switch -->
+            </label>
+        </div>
+    </header>
+    <main>
+        <section id="news">
+            <h2>Exciting Upcoming Magic: The Gathering Releases for Q3 and Q4 of 2024</h2>
+            <p>As we move into the latter half of 2024, Magic: The Gathering (MTG) fans have a lot to look forward to. 
+               Wizards of the Coast has announced a series of new releases that promise to bring fresh dynamics and excitement to the game. 
+               Here’s a sneak peek into what’s coming up in the third and fourth quarters of 2024.</p>
+            <img src="Image_01.png" alt="Magic The Gathering News"><!-- Image and alt text -->
+            <!-- Container for dynamic news content -->
+            <div id="news-content">Magic: The Gathering and Assassin's Creed Join Forces
+                Magic: The Gathering (MTG) fans are in for a treat as Wizards of the Coast announced an exciting collaboration with the popular video game franchise, Assassin's Creed. 
+                This crossover promises to bring an intriguing blend of MTG's rich fantasy universe with the historical and action-packed world of Assassin's Creed.
+            </div>
+        </section>
+        <section id="guides"><!-- Container for dynamic news content -->
+            <h2>Guides</h2>
+            <div id="guides-content"></div>
+        </section>
+        <section id="events"><!-- Container for dynamic news content -->
+            <h2>Event Calendar</h2>
+            <img src="MTG Events.png" alt="">
+            <div id="MTG Events.png"></div>
+        </section>
+        <section id="media"><!-- Container for dynamic news content -->
+            <h2>Media Links</h2>
+            <ul id="media-links"><!-- Media links -->
+                <li><a href="https://magic.wizards.com/en/news">Official MTG News</a></li>
+                <li><a href="https://www.youtube.com/user/wizardsmtg">MTG YouTube Channel</a></li>
+            </ul>
+        </section>
+        <section id="top-cards">
+            <h2>Top Ten Cards</h2>
+            <ol id="top-cards-list"></ol><!-- Ordered list for top ten cards -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <!-- Footer content -->
+            <p>&copy; 2024 Magic The Gathering Info Hub. AI-Generated content  </p>
+        </div>
+    </footer>
+    <script src="script.js"></script><!-- Link to JavaScript file -->
+</body>
+</html>
+
+
+
+
+

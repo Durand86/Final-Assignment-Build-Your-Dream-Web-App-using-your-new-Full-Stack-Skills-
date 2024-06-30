@@ -1,0 +1,157 @@
+/* styles.css */
+/* Visually hidden class for accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Define default light mode colors using CSS variables */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --header-bg-color: url('Image_02.png');
+    --footer-bg-color: url('Image_04.png');
+    --header-text-bg: rgba(0, 0, 0, 0.6);
+}
+/* Define dark mode colors using CSS */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-text-bg: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--header-bg-color) no-repeat center center;
+    background-size: cover;
+    color: var(--text-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header-content {
+    background: var(--header-text-bg);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: var(--footer-bg-color) no-repeat center center;
+    background-size: cover;
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    background: var(--header-text-bg);
+    padding: 1rem;
+}
+
+#calendar {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+article img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#top-cards-list img {
+    max-width: 100px;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Dark Mode Toggle Switch */
+.switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
